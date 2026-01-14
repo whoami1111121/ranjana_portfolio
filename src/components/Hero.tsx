@@ -26,7 +26,7 @@ export default function Hero() {
         <div className="flex gap-4 items-center justify-center">
           <WavingHand />
           <h1 className="text-[clamp(1rem,3vw,1.75rem)] text-white">
-            My name is Ranjana Tamang a Fullstack Developer
+            My name is Ranjana Tamang a Fullstack Developer.
           </h1>
         </div>
       </div>
