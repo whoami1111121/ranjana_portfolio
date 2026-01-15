@@ -3,7 +3,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="flex gap-4">
+    <div className="flex gap-4 bg-transparent">
       <Link href={"/"}>Home</Link>
       <Link href={"/about"}>about</Link>
       <Link href={"/contact"}>contact</Link>
