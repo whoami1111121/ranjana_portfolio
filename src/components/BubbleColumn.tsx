@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
+import Image from "next/image";
 
 export default function BubbleColumn() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -51,8 +52,8 @@ export default function BubbleColumn() {
       {Array.from({ length: 30 }).map((_, i) => (
         <div
           key={i}
-          className="absolute rounded-full bg-white/40 backdrop-blur-sm"
-        />
+          className="absolute rounded-full   backdrop-blur-sm"
+        ><Image src="/w.webp" alt="bubble" width={100} height={100} className="w-full h-full" /></div>
       ))}
     </div>
   );
