@@ -6,6 +6,9 @@ export default function Home() {
     <>
       <div>
         <Hero />
+        <div className="h-screen bg-amber-200"></div>
+        <div className="h-screen bg-amber-200"></div>
+        <div className="h-screen bg-amber-200"></div>
       </div>
     </>
   );

@@ -2,7 +2,6 @@
 
 import { useEffect } from "react";
 import Lenis from "@studio-freight/lenis";
-import gsap from "gsap";
 
 export default function SmoothScroll() {
   useEffect(() => {
@@ -10,7 +9,6 @@ export default function SmoothScroll() {
       duration: 1.4, // scroll smoothness
       easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // butter feel
       smoothWheel: true,
-      smoothTouch: false,
     });
 
     function raf(time: number) {
