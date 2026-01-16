@@ -18,16 +18,16 @@ const Navbar = () => {
   return (
     <header
       className={`
-        fixed top-0 left-0 w-full  z-50 transition-all duration-300
-        ${scrolled ? "bg-[#01070ed0] backdrop-blur-md" : "bg-transparent"}
+        fixed top-0 left-0 w-full    z-50 transition-all duration-300
+        ${scrolled ? "bg-[#06131bd0] backdrop-blur-md" : "bg-transparent"}
       `}
     >
-      <nav className="relative flex items-center justify-between px-40 py-4">
+      <nav className="relative flex items-center justify-between container_my py-4">
         {/* Logo */}
         <div className="text-white font-bold text-xl">Ranjana</div>
 
         {/* Menu */}
-        <div className="flex gap-6 text-white">
+        <div className="  gap-6 text-white hidden md:flex">
           <Link href="/">Home</Link>
           <Link href="/about">About</Link>
           <Link href="/projects">Projects</Link>

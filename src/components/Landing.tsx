@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import GlowFlies from "./GlowFlies";
 import { motion } from "framer-motion";
 import WavingHand from "./WavingHand";
 
@@ -18,11 +17,11 @@ const Landing = () => {
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
   return (
-    <div className="w-full pt-38 pb-18 h-full ">
+    <div className="w-full  pt-8 h-full ">
       <div className=" ">
-        <div className="flex gap-4 items-center justify-center">
+        <div className="flex gap-4 items-center justify-center  w-[75%] md:w-[90%] mx-auto">
           <WavingHand />
-          <h1 className="text-[clamp(1rem,3vw,1.75rem)] text-white">
+          <h1 className="text-[clamp(1rem,3vw,1.75rem)] text-white  ">
             My name is Ranjana Tamang a Fullstack Developer.
           </h1>
         </div>
@@ -32,34 +31,35 @@ const Landing = () => {
           style={{
             transform: `translate(${mouse.x * -0.02}px, ${mouse.y * -0.02}px)`,
           }}
-          className="absolute   h-[80%]   font-bold  select-none"
+          className="absolute pt-10 md:pt-20   h-[90%]   font-bold  select-none"
         >
-          <span className="uppercase text-transparent [-webkit-text-stroke:4px_white] text-[clamp(4rem,16vw,12rem)]">
+          <span className="uppercase text-transparent [-webkit-text-stroke:4px_white] text-[clamp(4rem,16vw,12rem)] opacity-60">
             Backend
           </span>
         </motion.h1>
 
-        {/* <img src="/hero.png" alt="hero" className="relative z-10 w-80" /> */}
         <div>
           <Image
-            src="/cat.webp"
+            src="/cat.png"
             alt="hero"
             width={1000}
             height={1000}
-            className="relative z-10 w-70 md:w-120 mt-12"
+            className="relative z-10 w-60 md:w-120 mt-12"
           />
-          <div className="absolute inset-y-0 left-1/2 -translate-x-1/2  w-full z-10">
+          {/* <div className="absolute inset-y-0 left-1/2 -translate-x-1/2  w-full z-10">
             <GlowFlies />
-          </div>
+          </div> */}
         </div>
 
         <motion.h1
           style={{
             transform: `translate(${mouse.x * 0.04}px, ${mouse.y * 0.04}px)`,
           }}
-          className="absolute z-20 h-full   font-bold flex items-end    "
+          className="absolute z-20 h-[90%]   font-bold flex items-end    "
         >
-          <span className="text-[clamp(4rem,16vw,12rem)]">& Frontend</span>
+          <span className="text-[clamp(2.5rem,12vw,10rem)] whitespace-nowrap">
+            & FRONTEND
+          </span>
         </motion.h1>
       </section>
     </div>

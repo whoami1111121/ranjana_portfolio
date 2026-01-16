@@ -1,11 +1,13 @@
- 
-import Hero from "@/components/Hero"; 
+import AboutMe from "@/components/AboutMe";
+import Hero from "@/components/Hero";
 
 export default function Home() {
   return (
     <>
-      <div>
+      <div className="bg-[#010a10] font-instrument ">
         <Hero />
+        <AboutMe />
+
         <div className="h-screen bg-amber-200"></div>
         <div className="h-screen bg-amber-200"></div>
         <div className="h-screen bg-amber-200"></div>
