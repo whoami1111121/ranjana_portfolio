@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <div className="bg-background font-instrument ">
-        <Hero />
+        {/* <Hero /> */}
         <AboutMe />
 
         <div className="h-screen bg-amber-200"></div>

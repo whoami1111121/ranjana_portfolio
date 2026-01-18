@@ -1,4 +1,4 @@
-"use client"; // ← must be first line
+"use client";
 
 import { useEffect, useState, useRef } from "react";
 import { animate } from "framer-motion";
@@ -35,7 +35,7 @@ const CountCard = ({
   useEffect(() => {
     if (inView) {
       const controls = animate(0, number, {
-        duration: 2,
+        duration: 4,
         onUpdate(value) {
           setCount(Math.floor(value));
         },
