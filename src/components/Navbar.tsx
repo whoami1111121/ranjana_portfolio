@@ -19,7 +19,7 @@ const Navbar = () => {
     <header
       className={`
         fixed top-0 left-0 w-full    z-50 transition-all duration-300
-        ${scrolled ? "bg-[#06131bd0] backdrop-blur-md" : "bg-transparent"}
+        ${scrolled ? "bg-cardbg backdrop-blur-md" : "bg-transparent"}
       `}
     >
       <nav className="relative flex items-center justify-between container_my py-4">

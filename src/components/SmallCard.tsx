@@ -1,8 +1,22 @@
-import React from "react";
+import React, { ReactNode, isValidElement } from "react";
+import Image from "next/image";
 
-const SmallCard = () => {
+type SmallCardProps = {
+  title?: string;
+  content?: string;
+  hoverBg?: boolean;
+  icon?: ReactNode;
+  icontype?: "image" | "icon";
+};
+const SmallCard = ({
+  title = "",
+  content = "",
+  hoverBg = false,
+  icon,
+  icontype,
+}: SmallCardProps) => {
   return (
-    <div className="group relative w-64 h-40 rounded-xl p-[2px]">
+    <div className="group relative   rounded-xl p-[2px]">
       <div
         className="
           absolute inset-0 rounded-xl opacity-0
@@ -12,11 +26,42 @@ const SmallCard = () => {
         "
       />
 
-      <div className="relative z-10 h-full w-full rounded-[10px] bg-[#06131b] p-4">
-        <h1 className="text-white text-sm">fsaasf asdfsadf asdf sadf</h1>
-        <div className="mt-2 bg-[#13fdfd] text-black px-2 py-1 inline-block rounded">
-          dafd
+      <div className="relative z-10 h-full w-full rounded-[10px] bg-cardbg p-4 sm:p-6 lg:p-8 overflow-hidden">
+        <div className="    ">
+          <div className="flex flex-wrap gap-4 items-center mb-4">
+            <div
+              className={`  mb-2 shadow-[0_0_8px_8px_rgba(19,253,253,0.11)] border-2 border-foreground rounded-full h-12 w-12 flex items-center justify-center
+              ${
+                icontype === "image"
+                  ? "    bg-background "
+                  : "  text-white  bg-foreground "
+              }`}
+            >
+              {icon}
+            </div>
+            <h1 className="subHeading">{title}</h1>
+          </div>
+          <div className="contextText">{content}</div>
         </div>
+        {hoverBg && (
+          <div
+            className="
+      pointer-events-none
+      absolute bottom-0 left-1/2 -translate-x-1/2
+      w-[40%] aspect-square
+      rounded-full
+      bg-background
+      opacity-0
+      blur-2xl
+      transition-all duration-500
+      group-hover:opacity-100
+      group-hover:bg-[#13fdfd]/20
+      group-hover:scale-110
+      translate-y-1/2
+      z-1
+    "
+          />
+        )}
       </div>
     </div>
   );
