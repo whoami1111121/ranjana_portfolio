@@ -2,6 +2,7 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import WavingHand from "./WavingHand";
+import GlowFlies from "./GlowFlies";
 
 const Landing = () => {
   const [mouse, setMouse] = useState({ x: 0, y: 0 });
@@ -39,6 +40,9 @@ const Landing = () => {
         </motion.h1>
 
         <div>
+          <div className="absolute inset-y-0 left-1/2 -translate-x-1/2  w-full z-10">
+            <GlowFlies />
+          </div>
           <Image
             src="/cat.png"
             alt="hero"
@@ -46,9 +50,9 @@ const Landing = () => {
             height={1000}
             className="relative z-10 w-60 md:w-120 mt-12"
           />
-          {/* <div className="absolute inset-y-0 left-1/2 -translate-x-1/2  w-full z-10">
+          <div className="absolute inset-y-0 left-1/2 -translate-x-1/2  w-full z-10">
             <GlowFlies />
-          </div> */}
+          </div>
         </div>
 
         <motion.h1
