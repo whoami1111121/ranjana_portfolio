@@ -1,12 +1,12 @@
-import React from "react";
-import SmallCard from "./SmallCard";
 import { Aave } from "iconsax-reactjs";
-import Image from "next/image";
+import SmallCard from "./SmallCard";
+import Button from "./Button";
+import CountCard from "./CountCard";
 
 const AboutMe = () => {
   return (
     <div className="container_my mainTopBottomPadding">
-      <div className="flex flex-col md:flex-row gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 lg:gap-12 items-center">
         <div className="flex-1 ">
           <div className="mb-4 sm:mb-6 lg:mb-8">
             <h1 className="topSubHeading">About Me</h1>
@@ -21,23 +21,31 @@ const AboutMe = () => {
           </div>
           <div className="flex gap-4 flex-wrap md:flex-nowrap">
             <SmallCard
-              title="Business Consulting"
+              title="With hover bg"
               content="Business consulting consultants provide expert advice."
               hoverBg={true}
               icon={<Aave size="32" />}
               icontype="icon"
             />
             <SmallCard
-              title="Business Consulting"
+              title="No hover bg"
               content="Business consulting consultants provide expert advice."
-              hoverBg={true}
               icon={<Aave size="32" />}
               icontype="icon"
             />
-            {/* <SmallCard /> */}
+          </div>
+          <div className="my-4">
+            <Button text="Get Started" link="/contact" />
           </div>
         </div>
-        <div className="flex-1">{/* <SmallCard /> */}</div>
+        <div className="flex w-full items-center  h-full ">
+          <div className="grid grid-cols-1 md:cgrid-cols-1 lg:grid-cols-2 gap-2 md:gap-4   w-full">
+            <CountCard number={120} type="+" content="Our Project Complete" />
+            <CountCard number={12} type="+" content="Our Project Complete" />
+            <CountCard number={20} type="+" content="Our Project Complete" />
+            <CountCard number={70} type="+" content="Our Project Complete" />
+          </div>
+        </div>
       </div>
     </div>
   );

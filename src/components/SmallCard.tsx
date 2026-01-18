@@ -1,5 +1,4 @@
-import React, { ReactNode, isValidElement } from "react";
-import Image from "next/image";
+import { ReactNode } from "react";
 
 type SmallCardProps = {
   title?: string;

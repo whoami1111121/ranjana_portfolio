@@ -53,9 +53,9 @@ body {
   background: linear-gradient(
     90deg,
     transparent,
-    #60a5fa,
+    #13fdfd,
     #a78bfa,
-    #22d3ee,
+    #13fdfd,
     transparent
   );
   filter: blur(1px);
@@ -76,5 +76,37 @@ body {
   100% {
     transform: translateX(400%);
     opacity: 0;
+  }
+}
+
+.glow-line-360 {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #13fdfd,
+    #13fdfd,
+    #13fdfd,
+    transparent
+  );
+  height: 6px;
+  width: 500px;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, 10%);
+  filter: blur(11px);
+  animation: rotate-line 6s linear infinite;
+}
+
+@keyframes rotate-line {
+  0% {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-50%) rotate(360deg);
   }
 }
