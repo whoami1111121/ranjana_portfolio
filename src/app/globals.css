@@ -3,7 +3,7 @@
 :root {
   --background: #010a10;
   --cardbg: #06131b;
-  --foreground: #13fdfd;
+  --foreground: #05cfcf;
 }
 
 @theme inline {
@@ -37,7 +37,7 @@
   :root {
     --background: #010a10;
     --cardbg: #06131b;
-    --foreground: #13fdfd;
+    --foreground: #05cfcf;
   }
 }
 
@@ -53,9 +53,9 @@ body {
   background: linear-gradient(
     90deg,
     transparent,
-    #13fdfd,
+    #05cfcf,
     #a78bfa,
-    #13fdfd,
+    #05cfcf,
     transparent
   );
   filter: blur(1px);

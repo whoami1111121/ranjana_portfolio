@@ -23,7 +23,7 @@ const Landing = () => {
         <div className="flex gap-4 items-center justify-center  w-[75%] md:w-[90%] mx-auto">
           <WavingHand />
           <h1 className="text-[clamp(1rem,3vw,1.75rem)] text-white  ">
-            My name is Ranjana Tamang a Fullstack Developer.
+            My name is Ranjana Tamang a Frontend Developer.
           </h1>
         </div>
       </div>
@@ -34,8 +34,8 @@ const Landing = () => {
           }}
           className="absolute pt-10 md:pt-20   h-[90%]   font-bold  select-none"
         >
-          <span className="uppercase text-transparent [-webkit-text-stroke:4px_white] text-[clamp(4rem,16vw,12rem)] opacity-60">
-            Backend
+          <span className="uppercase text-transparent [-webkit-text-stroke:4px_white] text-[clamp(3.5rem,16vw,12rem)] opacity-60">
+            Developer
           </span>
         </motion.h1>
 
@@ -44,7 +44,7 @@ const Landing = () => {
             <GlowFlies />
           </div>
           <Image
-            src="/cat.png"
+            src="/maam.webp"
             alt="hero"
             width={1000}
             height={1000}
@@ -62,7 +62,7 @@ const Landing = () => {
           className="absolute z-20 h-[90%]   font-bold flex items-end    "
         >
           <span className="text-[clamp(2.5rem,12vw,10rem)] whitespace-nowrap">
-            & FRONTEND
+            FRONTEND
           </span>
         </motion.h1>
       </section>
