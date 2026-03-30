@@ -48,7 +48,7 @@ const Landing = () => {
             alt="hero"
             width={1000}
             height={1000}
-            className="relative z-10 w-60 md:w-200 mt-12"
+            className="relative z-10 w-60 md:w-180 mt-12"
           />
           <div className="absolute inset-y-0 left-1/2 -translate-x-1/2  w-full z-10">
             <GlowFlies />

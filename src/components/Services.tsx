@@ -1,7 +1,5 @@
 import { Aave } from "iconsax-reactjs";
 import SmallCard from "./SmallCard";
-import Button from "./Button";
-import CountCard from "./CountCard";
 
 const Services = () => {
   return (
