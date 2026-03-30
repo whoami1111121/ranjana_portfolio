@@ -5,7 +5,7 @@ const MySkill = () => {
   return (
     <div className="container_my mainTopBottomPadding">
       <div className="bg-[#06131bbd] px-4 sm:px-6 lg:px-8 py-16 rounded-4xl">
-        <div className="flex gap-8 items-center">
+        <div className="flex gap-8 md:items-center md:flex-row flex-col">
           <div className="flex-1 flex flex-col gap-2">
             <h1 className="topSubHeading">My Skill</h1>
             <h1 className="heading mb-4">
