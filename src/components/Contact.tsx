@@ -62,8 +62,8 @@ const Contact = () => {
             <div className="flex-5">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 lg:gap-12 items-center">
                 <div>
-                  <form >
-                    <input type="text" />
+                  <form className="flex flex-col">
+                    <input type="text" className="border border-[#0f405ebd] px-8 py-4 w-full rounded-2xl" />
 
                     <button>Send Message</button>
                   </form>
