@@ -1,4 +1,5 @@
 import AboutMe from "@/components/AboutMe";
+import Contact from "@/components/Contact";
 import Hero from "@/components/Hero";
 import MySkill from "@/components/MySkill";
 import Projects from "@/components/Projects";
@@ -13,6 +14,7 @@ export default function Home() {
         <Services />
         <MySkill />
         <Projects />
+        <Contact />
 
         <div className="h-screen bg-amber-200"></div>
         <div className="h-screen bg-amber-200"></div>
