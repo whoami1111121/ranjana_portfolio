@@ -42,7 +42,7 @@ const Button = ({ text, link = "" }: buttonType) => {
             <ArrowRight size={16} />
           </span>
 
-          <span>{text}</span>
+          <span className="text-base">{text}</span>
 
           <span
             className="
