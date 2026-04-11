@@ -3,7 +3,7 @@ import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
   return (
-    <div className="container_my mainTopBottomPadding">
+    <div className="container_my mainTopBottomPadding" id="projects">
       <div className="text-center">
         {/* <div className=""> */}
         <div className="flex-1 ">

@@ -8,7 +8,7 @@ import Landing from "./Landing";
 
 export default function Hero() {
   return (
-    <section className="relative     w-full  ">
+    <section id="home" className="relative     w-full  ">
       <Image
         src="/banner-shape-light.svg"
         alt="background"

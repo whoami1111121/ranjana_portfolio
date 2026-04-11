@@ -5,7 +5,7 @@ import CountCard from "./CountCard";
 
 const AboutMe = () => {
   return (
-    <div className="container_my mainTopBottomPadding">
+    <div className="container_my mainTopBottomPadding" id='about'>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 lg:gap-12 items-center">
         <div className="flex-1 ">
           <div className="mb-4 sm:mb-6 lg:mb-8">

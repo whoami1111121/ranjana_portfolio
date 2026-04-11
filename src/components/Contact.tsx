@@ -3,7 +3,7 @@ import SmallCard from "./SmallCard";
 
 const Contact = () => {
   return (
-    <div className="container_my mainTopBottomPadding">
+    <div className="container_my mainTopBottomPadding" id="contact">
       <div className="bg-[#06131bbd] px-4 sm:px-6 lg:px-8 py-16 rounded-4xl relative overflow-hidden">
         <div className="">
           <div className="flex gap-8 md:items-center md:flex-row flex-col  ">
