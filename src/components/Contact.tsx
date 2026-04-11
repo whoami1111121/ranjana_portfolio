@@ -60,15 +60,28 @@ const Contact = () => {
               </div>
             </div>
             <div className="flex-5">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 lg:gap-12 items-center">
-                <div>
-                  <form className="flex flex-col">
-                    <input type="text" className="border border-[#0f405ebd] px-8 py-4 w-full rounded-2xl" />
+              {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 lg:gap-12 items-center"> */}
+              <div>
+                <h1 className="contextText text-left py-2 sm:py-4 lg:py-6 font-semibold text-white">
+                  GET IN TOUCH
 
-                    <button>Send Message</button>
-                  </form>
-                </div>
+                </h1>
+                <form className="flex flex-col gap-4">
+                  <div className="flex flex-col md:flex-row gap-4">
+                    <input type="text" className="border border-[#0f405ebd] px-6 py-3 w-full rounded-lg" placeholder="Your Name" />
+                    <input type="text" className="border border-[#0f405ebd] px-6 py-3 w-full rounded-lg" placeholder="Phone Number" />
+                  </div>
+                  <div className="flex flex-col md:flex-row gap-4">
+                    <input type="text" className="border border-[#0f405ebd] px-6 py-3 w-full rounded-lg" placeholder="Your Email" />
+                    <input type="text" className="border border-[#0f405ebd] px-6 py-3 w-full rounded-lg" placeholder="Your Subject" />
+                  </div>
+                  <textarea className="border border-[#0f405ebd] px-6 py-3 w-full rounded-lg" placeholder="Your Message" rows={4} cols={50} />
+
+
+                  <button className="bg-foreground text-cardbg font-semibold text-xl py-4 rounded-lg cursor-pointer hover:font-bold transition-all">Send Message</button>
+                </form>
               </div>
+              {/* </div> */}
             </div>
 
           </div>
